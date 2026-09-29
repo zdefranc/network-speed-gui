@@ -1,0 +1,14 @@
+Connecting to host fra.speedtest.clouvider.net, port 5201
+[  5] local 172.20.10.2 port 50186 connected to 91.199.118.184 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.01   sec   256 KBytes  2.08 Mbits/sec                  
+[  5]   1.01-2.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   3.00-4.00   sec  2.75 MBytes  23.2 Mbits/sec                  
+[  5]   4.00-5.01   sec  1.12 MBytes  9.35 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-5.01   sec  4.12 MBytes  6.91 Mbits/sec                  sender
+[  5]   0.00-5.63   sec  3.08 MBytes  4.60 Mbits/sec                  receiver
+
+iperf Done.

@@ -1,0 +1,36 @@
+[package]
+name = "network-speed-gui"
+version = "0.1.0"
+edition = "2024"
+authors = ["Zachary De Francesco"]
+rust-version = "1.95"
+description = "Windows desktop GUI for running iperf3 TCP throughput tests, watching them live, and saving the results"
+readme = "README.md"
+publish = false
+
+[dependencies]
+# GUI: eframe is egui's native window/renderer host; egui_plot draws the live chart.
+eframe = "0.36.2"
+egui = "0.36.2"
+egui_plot = "0.37.0"
+rfd = "0.17.2"
+thiserror = "2.0.21"
+which = "8.0.6"
+chrono = "0.4.45"
+regex = "1.13.1"
+
+[target.'cfg(windows)'.dependencies]
+# Job Objects (kill iperf3 if the GUI dies) and the CREATE_NO_WINDOW flag.
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_JobObjects",
+    "Win32_System_Threading",
+] }
+
+[package.metadata.wix]
+# No license agreement page in the installer.
+eula = false
+
+[profile.release]
+lto = "thin"

@@ -1,0 +1,13 @@
+warning: Ignoring nonsense TCP MSS 4284416
+Connecting to host fra.speedtest.clouvider.net, port 5201
+[  5] local 172.16.1.145 port 53092 connected to 91.199.118.184 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.01   sec   825 KBytes  6.68 Mbits/sec                  
+[  5]   1.01-2.00   sec  9.85 MBytes  83.6 Mbits/sec                  
+[  5]   2.00-3.00   sec  12.8 MBytes   108 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-3.00   sec  23.5 MBytes  65.7 Mbits/sec                  sender
+[  5]   0.00-3.18   sec  21.9 MBytes  57.7 Mbits/sec                  receiver
+
+iperf Done.
